@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table 包含 tr，tr包含td/th -->
+    <table border="2" width="200">
+        <!-- 实际开发中一般使用css设置样式效果 -->
+        <caption><strong>成绩单</strong></caption>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>成绩</th>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>男</td>
+            <td rowspan="2">100</td>
+            <!-- 跨行合并用rowspan 跨列合并用colspan 合并时保留左上 删除其他。-->
+            <!-- 合并只能作用于同一标签 不能跨thead tbody tfoot使用 -->
+        </tr>        
+        <tr>
+            <td>李丽</td>
+            <td>女</td>
+        </tr>
+    </table>
+</body>
+</html>
